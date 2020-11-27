@@ -1,0 +1,88 @@
+
+/*Denna CSS fil är inte på något vis optimerad att vara perfekt
+  utan visar mer på att det finns en hel del olika saker
+  man kan råka ut för*/
+
+body{
+  background-color: rgb(143, 106, 245);
+}
+
+
+/*Detta "recept" visar ramen på klockan och är kopplat till denna tag i HTML
+ <div class="klockram">
+ att det är en punkt framför namnet klockram är för att tala om att det är ett namn på en class som avses.
+ är det en # före namnet i CSS så är det ett namn på ett id som avses 
+*/  
+.klockram{
+position:absolute;
+
+top:100px;
+left:100px;
+
+width:200px;
+height:65px;
+
+margin:0px;
+padding:0px;
+
+background-color:white;
+
+border: 1px;
+border-style:solid;
+border-color:#999999;
+border-radius: 50px;
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(63, 44, 44, 0.19);
+
+text-align:center;
+font-size:40px;
+
+}
+
+.siffra{
+position:absolute;
+top:10px;
+left:20px;
+
+width:150px;
+height:40px;
+
+margin:0px;
+padding:0px;
+}
+
+
+/*I detta recept som har samma namn som ett id i HTML dokumentet
+  <strong id="tid">00:00:00</strong>
+*/
+#tid{
+position:absolute;
+top:0px;
+left:5px;
+}
+
+/* I detta recept är det knappen som går att trycka på som avses */
+#vxlKnapp{
+position:absolute;
+
+top:200px;
+left:145px;
+
+width:100px;
+height:40px;
+
+margin:0px;
+padding:0px;
+}
+
+/* Detta recept beskriver vad som skall hända med taggen som har id=vxlKnapp om musen svävar 
+   över elementet  (sväva = hover på engelska) */
+#vxlKnapp:hover{
+  top:201px;
+  left:146px;
+}
+
+
+
+
+
